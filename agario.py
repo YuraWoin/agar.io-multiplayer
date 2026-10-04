@@ -5,7 +5,7 @@ from socket import *
 from threading import Thread
 
 sock = socket(AF_INET, SOCK_STREAM)
-sock.connect(("2.tcp.eu.ngrok.io", 14227))
+sock.connect(('localhost', 8080))
 
 my_data = sock.recv(64).decode().strip().split(",")
 
